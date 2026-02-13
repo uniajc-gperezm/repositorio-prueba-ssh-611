@@ -1,27 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
-
-    <style>
-        body {
-            background-color: aquamarine;
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gourmet Excellence - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec3713",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#1a0f0d", // Darker variation of the primary hue
+                        "accent-gold": "#d4af37",
+                    },
+                    fontFamily: {
+                        "display": ["Be Vietnam Pro", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .glass-nav {
+            background: rgba(26, 15, 13, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
         }
     </style>
-    <script>
-        console.log("Hola desde el Archivo index html");
-    </script>
-
-</head>
-
-<body>
-    <h1>Hola Mundo desde HTML</h1>
-</body>
-
-<script src="js/main.js"></script>
-
-</html>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-stone-800 dark:text-stone-200 antialiased overflow-x-hidden pb-24">
+<!-- Top Status Bar Mockup (iOS Style) -->
+<div class="fixed top-0 w-full z-50 px-6 py-3 flex justify-between items-center bg-gradient-to-b from-background-dark/80 to-transparent">
+<span class="text-xs font-semibold tracking-tight text-white">9:41</span>
+<div class="flex gap-1.5 items-center">
+<span class="material-icons-round text-[14px] text-white">signal_cellular_alt</span>
+<span class="material-icons-round text-[14px] text-white">wifi</span>
+<span class="material-icons-round text-[14px] text-white rotate-90">battery_full</span>
+</div>
+</div>
+<!-- Hero Header -->
+<section class="relative h-[60vh] w-full overflow-hidden">
+<img alt="Signature Dish" class="absolute inset-0 w-full h-full object-cover" data-alt="Exquisite plating of a signature steak dish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaPgsWnYGgXDlrESfjfoftOMmN5Xd5JSMNB09_eYZxBbHWKgpo-FPV_6K_ERKV9YkJ1glkBmcX_Xl_aiefqShW33-OFqpTkhxnUUoKMscCra_8DmYUxkYRBolp55AZh51hdenNZXE2pRGyhifF-cKLpB4wLYpKgLcAC_QzdWFK-kIv0VWUPB0krkHckO1Hz6JwWeKy5ClwZckwoeoNPosIMY9UWzH1kai367LLShPp6pVdwTVV3dHNc_caSyXYM1tuuUP7NWGfiA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 right-0 p-6 space-y-2">
+<div class="flex items-center gap-2 mb-2">
+<span class="h-px w-8 bg-accent-gold"></span>
+<span class="text-accent-gold uppercase tracking-[0.2em] text-[10px] font-bold">Featured Tonight</span>
+</div>
+<h1 class="font-serif text-4xl text-white leading-tight">Charred Wagyu <br/>with Truffle Jus</h1>
+<p class="text-stone-300 text-sm max-w-xs leading-relaxed">Experience a symphony of flavors curated by Executive Chef Julian Vance.</p>
+</div>
+<!-- Logo Overlay -->
+<div class="absolute top-12 left-0 right-0 flex justify-center">
+<div class="flex flex-col items-center">
+<span class="font-serif italic text-2xl text-white tracking-widest uppercase">Lumiere</span>
+<span class="text-[8px] text-accent-gold uppercase tracking-[0.4em] -mt-1">Fine Dining</span>
+</div>
+</div>
+</section>
+<!-- Content Container -->
+<main class="relative z-10 px-6 -mt-4">
+<!-- Welcome Section -->
+<div class="bg-background-dark/60 backdrop-blur-md p-6 rounded-xl border border-white/5 shadow-2xl">
+<h2 class="font-serif text-2xl text-white mb-2">Welcome to Lumiere</h2>
+<p class="text-stone-400 text-sm leading-relaxed mb-6">
+                A modern interpretation of classic French techniques, serving seasonal ingredients in an atmosphere of refined elegance.
+            </p>
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-4 rounded-lg flex items-center justify-center gap-2 transition-all active:scale-[0.98]">
+<span class="material-icons-round text-sm">calendar_month</span>
+<span>Book a Table</span>
+</button>
+</div>
+<!-- Chef's Specials Horizontal Scroll -->
+<section class="mt-10 mb-8">
+<div class="flex items-end justify-between mb-5">
+<div>
+<span class="text-accent-gold uppercase tracking-widest text-[10px] font-bold">Recommended</span>
+<h3 class="font-serif text-2xl text-white">Chef's Specials</h3>
+</div>
+<a class="text-primary text-xs font-semibold border-b border-primary/30 pb-0.5" href="#">View All</a>
+</div>
+<div class="flex overflow-x-auto no-scrollbar gap-5 -mx-6 px-6">
+<!-- Special 1 -->
+<div class="min-w-[240px] group">
+<div class="relative h-64 mb-3 rounded-xl overflow-hidden shadow-lg border border-white/5">
+<img alt="Lobster Bisque" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Rich lobster bisque served in a ceramic bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2ScIOqFBrhcEptrFe7ypD02-wdiWzMqEx3C9_aYqBULkYb30XS9ZayeeDJgDh2EjQT0DGvr6OTh2jA8MttWEFVz_yu8PszYauSZMGUU7l2N9MEyBvlnDavbWxkA1kazwvKgRlcMNwnaRpTkRlviSOCJwPdDDCWmIDTx_y0CVbtuFV6fwqfd0yVbZLREEAcfr1z584R_uZeBDeUz412ZzeAEB78EifDdE88I6PmQbauDD654wQtcrwFJ_wwPbomoDO59sfAabiLA"/>
+<div class="absolute top-3 right-3 bg-background-dark/80 backdrop-blur-md px-3 py-1.5 rounded-full border border-accent-gold/30">
+<span class="text-accent-gold text-xs font-bold font-display">$42</span>
+</div>
+</div>
+<h4 class="text-white font-serif text-lg">Atlantic Lobster Bisque</h4>
+<p class="text-stone-500 text-xs mt-1">Cognac cream, chive oil, micro-herbs</p>
+</div>
+<!-- Special 2 -->
+<div class="min-w-[240px] group">
+<div class="relative h-64 mb-3 rounded-xl overflow-hidden shadow-lg border border-white/5">
+<img alt="Truffle Pasta" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Handmade tagliatelle with fresh black truffle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCunIsBjL4UlDwIPL2GuCKvoY7-tlWhzBtI9rIcIslak2FpsqymDGHYCSkCcUtxy4PQlGGfwCpsQpJYf8au-7yibB2qdlvUFd989mlwYQLiy-yotunk6laO9VIA0kZlGKfE7D5gJ7EVSx7wZ4PR2DXJ3SJJY7hQrd1xGXyXforhp-zSDoc_0Q1pcKkmsElIjMle-4vJjb_opZYZIYSQHls5PJipiblftcQa1nuu_vn9S4nLkwjbtzHol6EPvI6frRJr81HgLsOumg"/>
+<div class="absolute top-3 right-3 bg-background-dark/80 backdrop-blur-md px-3 py-1.5 rounded-full border border-accent-gold/30">
+<span class="text-accent-gold text-xs font-bold font-display">$38</span>
+</div>
+</div>
+<h4 class="text-white font-serif text-lg">Black Truffle Tagliatelle</h4>
+<p class="text-stone-500 text-xs mt-1">House-made pasta, 24-month aged parmesan</p>
+</div>
+<!-- Special 3 -->
+<div class="min-w-[240px] group">
+<div class="relative h-64 mb-3 rounded-xl overflow-hidden shadow-lg border border-white/5">
+<img alt="Duck Confit" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Crispy duck confit with berry reduction" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALkgPWMR2KAjrzyx9Z_VTlJqKi_D403Kcp4hnX9OTMhRFlzXv2NStt3FseMV-zriwcLFwTmQ2UYw3pXV6IsDimwweB2e8u-zWvEoMNcDmjIQqyk4-u8624qGeivPJNCYvhx751viGa827IjjkB3-_cSw1uVTSdsgCmXRaoX1CehYnHsKSvkaDyFM34OwvMzTSSA92vLEcGbv-OIZZxpwhLQrp4GEwObPtn-gl-sSzN2hE6Auh2p-unPBml1R99VVASjVS9dVsTYg"/>
+<div class="absolute top-3 right-3 bg-background-dark/80 backdrop-blur-md px-3 py-1.5 rounded-full border border-accent-gold/30">
+<span class="text-accent-gold text-xs font-bold font-display">$46</span>
+</div>
+</div>
+<h4 class="text-white font-serif text-lg">Honey Glazed Duck</h4>
+<p class="text-stone-500 text-xs mt-1">Cherry reduction, parsnip puree, thyme</p>
+</div>
+</div>
+</section>
+<!-- Quick Actions -->
+<section class="grid grid-cols-2 gap-4 mt-4">
+<div class="bg-background-dark/40 border border-white/5 p-4 rounded-xl flex flex-col gap-3">
+<span class="material-icons-round text-accent-gold">restaurant_menu</span>
+<div>
+<h5 class="text-white font-semibold text-sm">Full Menu</h5>
+<p class="text-stone-500 text-[10px]">Explore our cellar &amp; kitchen</p>
+</div>
+</div>
+<div class="bg-background-dark/40 border border-white/5 p-4 rounded-xl flex flex-col gap-3">
+<span class="material-icons-round text-accent-gold">location_on</span>
+<div>
+<h5 class="text-white font-semibold text-sm">Our Location</h5>
+<p class="text-stone-500 text-[10px]">Find the nearest Lumiere</p>
+</div>
+</div>
+</section>
+<!-- Footer Info -->
+<footer class="mt-12 mb-8 text-center">
+<div class="h-px w-24 bg-gradient-to-r from-transparent via-accent-gold/30 to-transparent mx-auto mb-6"></div>
+<p class="text-stone-600 text-[10px] uppercase tracking-widest font-bold mb-2">Open Daily</p>
+<p class="text-stone-400 text-xs">Mon — Fri: 5pm – 11pm</p>
+<p class="text-stone-400 text-xs mb-8">Sat — Sun: 12pm – 12am</p>
+</footer>
+</main>
+<!-- Bottom Navigation Bar (iOS Inspired) -->
+<nav class="fixed bottom-0 left-0 right-0 glass-nav border-t border-white/5 px-8 pt-4 pb-8 z-[100] flex justify-between items-center">
+<div class="flex flex-col items-center gap-1 group">
+<span class="material-icons-round text-primary">home</span>
+<span class="text-[10px] font-bold text-primary">Home</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-stone-500 hover:text-white transition-colors">
+<span class="material-icons-round text-[22px]">menu_book</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Menu</span>
+</div>
+<div class="relative -top-1">
+<div class="bg-primary p-3 rounded-full shadow-[0_4px_20px_rgba(236,55,19,0.4)] border-4 border-background-dark">
+<span class="material-icons-round text-white text-[28px]">add</span>
+</div>
+</div>
+<div class="flex flex-col items-center gap-1 text-stone-500 hover:text-white transition-colors">
+<span class="material-icons-round text-[22px]">confirmation_number</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Tickets</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-stone-500 hover:text-white transition-colors">
+<span class="material-icons-round text-[22px]">person_outline</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter">Profile</span>
+</div>
+</nav>
+<!-- Home Indicator -->
+<div class="fixed bottom-1 left-1/2 -translate-x-1/2 w-32 h-1.5 bg-white/20 rounded-full z-[101]"></div>
+</body></html>
