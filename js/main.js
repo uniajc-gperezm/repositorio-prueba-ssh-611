@@ -1,1 +1,1 @@
-console.log("Hola Mundo dese Javascript");
+console.log("Hola Mundo dese Javascript archhivo externo");

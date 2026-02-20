@@ -1,11 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<!DOCTYPE html> <!-- Indica que es un documento HTML5 -->
+<html lang="en"> <!-- Etiqueta raíz del documento, con el atributo lang para especificar el idioma -->
+
+<head> <!-- Etiqueta donde va toda la configuracion -->
+    
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres del documento -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el sitio sea responsive, ajustando el ancho al dispositivo -->
+
+    <title>Document</title> <!-- Título del documento que aparece en la pestaña del navegador -->
+    <meta name="description" content="Valor de la description" /> <!-- Metaetiqueta para la descripción del sitio, útil para SEO -->
+
+    <!-- OPEN GRAPH --> <!-- Metaetiquetas para compartir en redes sociales, siguiendo el protocolo Open Graph -->
+    <meta property="og:title" content="Portafolio de un tecnologo de sisemas" /> 
+    <meta
+      property="og:description"
+      content="Portafolio de Gabriel Perez con mas de 5 anos de experiencia"
+    />
+
+    <meta property="og:image" content="./images/manzana.jpg" />
+    <meta property="og:image:alt" content="Fotografia de Gabriel " />
+
+    <!-- https://ogp.me/ Para mas informacion sobre el protocolo open graph -->
+
+
+    <!-- SEO -->  <!-- Metaetiquetas para mejorar el posicionamiento en motores de búsqueda -->
+
+    <link rel="alternate" href="http://google.com/es" hreflang="es-CO" /> <!-- Indica una versión alternativa del sitio para un idioma específico, útil para SEO internacional --> 
+    <link rel="canonical" href="http://google.com" /> <!-- Indica la URL canónica del sitio, evitando contenido duplicado -->
+
+    <meta name="robots" content="index, follow" /> <!-- Indica a los motores de búsqueda que indexen la página y sigan los enlaces, útil para SEO -->
+    
+    <meta name="theme-color" content="#09f" /> <!-- Define el color del tema para navegadores móviles, mejorando la experiencia del usuario -->
+
+    <link rel="icon" type="image/jpg" href="./images/manzana.jpg" /> <!-- Enlace a un icono de sitio (favicon) que aparece en la pestaña del navegador -->
+
+    <link rel="stylesheet" href="css/style.css"> <!-- Enlace a una hoja de estilos externa para aplicar estilos CSS al documento -->
+
+    <style> 
+      /* * {
+        border: 1px solid red;
+      } */
+    </style> <!-- Estilos CSS internos para aplicar un borde rojo a todos los elementos, útil para depuración visual -->
+
+    <script>
+      console.log('Hola mundo desde el script interno');
+    </script> <!-- Script JavaScript interno que imprime "Hola mundo" en la consola del navegador, útil para pruebas y depuración -->
+
+    <script src="./js/main.js"></script>
+
 </head>
-<body>
-    <h1>Hola Mundo desde la carpeta raíz</h1>
+<body> <!-- Cuerpo del documento donde va el contenido visible -->
+    <h1 style="color: red;">Hola Mundo desde la carpeta raíz</h1>
+
+    
+
 </body>
 </html>
