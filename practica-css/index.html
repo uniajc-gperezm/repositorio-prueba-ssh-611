@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práctica CSS — Ejemplo básico</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header id="main-header" class="site-header">
+        <div class="container">
+            <h1 class="logo">Práctica CSS</h1>
+            <nav class="main-nav">
+                <a href="#">Inicio</a>
+                <a href="#cards">Cards</a>
+                <a href="#form">Formulario</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2 id="titulo-css" style="color: green">Aprende a escribir CSS</h2>
+            <p>
+                Usa este archivo para practicar selectores, layout, variables y pequeñas
+                animaciones.
+            </p>
+            <button id="countBtn" class="btn">Haz clic: <span id="count">0</span></button>
+        </section>
+
+        <ul class="lista">
+            <li>Uno</li>
+            <li>Dos</li>
+            <li>Tres</li>
+        </ul>
+
+        <section id="cards" class="cards">
+            <article class="card">
+                <h3>Card 1</h3>
+                <p>Ejemplo de tarjeta con sombra y transición.</p>
+                <a class="btn ghost" href="#">Leer más</a>
+            </article>
+            <article class="card">
+                <h3>Card 2</h3>
+                <p>Prueba estilos de grid y responsive.</p>
+                <a class="btn" href="#">Leer más</a>
+            </article>
+            <article class="card">
+                <h3>Card 3</h3>
+                <p>Personaliza colores y tipografías aquí.</p>
+                <a class="btn ghost" href="#">Leer más</a>
+            </article>
+        </section>
+
+        <section id="form" class="form-section">
+            <h2>Formulario de ejemplo</h2>
+            <form id="demoForm">
+                <label for="name">Nombre</label>
+                <input id="name" name="name" type="text" placeholder="Tu nombre" required />
+                <input id="Apellido" name="Apellido" type="email" placeholder="email" required />
+                <input id="Direccion" name="Direccion" type="text" placeholder="Direccion" required />
+                <input id="Telefono" name="Telefono" type="text" placeholder="Telefono" required />
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="ejemplo@dominio.com" required />
+
+                <button class="btn primary" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">Hecho para practicar CSS • Ejemplo simple</div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
