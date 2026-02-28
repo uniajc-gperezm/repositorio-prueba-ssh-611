@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Maria del Mar Perez</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main-container">
+        <h1 class="main-title">MI PORTAFOLIO</h1>
+
+        <header class="profile-header">
+            <figure class="profile-circle">
+                <img src="src/Foto1.png" alt="Maria del Mar Perez Montenegro">
+            </figure>
+            <address class="contact-info">
+                <h2>MARIA DEL MAR PEREZ MONTENEGRO</h2>
+                <p>📍 Cali, Colombia 📞 +57 321 899 2617</p>
+                <p>📧 <a href="mailto:mariadelmarperezmontengro@gmail.com">mariadelmarperezmontengro@gmail.com</a></p>
+                <p>🔗 <a href="https://www.linkedin.com/in/maria-del-mar-perez-montenegro-876954351" target="_blank">LinkedIn</a></p>
+            </address>
+        </header>
+
+        <nav class="menu-horizontal">
+            <button onclick="show('perfil', this)">Perfil Profesional</button>
+            <button onclick="show('habilidades', this)">Habilidades</button>
+            <button onclick="show('experiencia', this)">Experiencia Profesional</button>
+            <button onclick="show('educacion', this)">Educación</button>
+            <button onclick="show('otros', this)">Otros Estudios</button>
+            <button onclick="show('idiomas', this)">Idiomas</button>
+            <button onclick="show('proyectos', this)">Proyectos Relevantes</button>
+        </nav>
+
+        <article id="comic-bubble" class="bubble">
+            <div id="bubble-arrow"></div>
+            
+            <section id="perfil" class="section">
+                <h3>Perfil Profesional</h3>
+                <p>Estudiante de Tecnología en Sistemas de Información, con formación orientada al desarrollo de software y bases de datos, Capacidad para analizar requerimientos, documentar soluciones y resolver incidentes técnicos. Perfil adaptable con enfoque en mejora continua.</p>
+            </section>
+
+            <section id="habilidades" class="section">
+                <h3>Habilidades</h3>
+                <ul>
+                    <li>Programación y Desarrollo de Software.</li>
+                    <li>Bases de Datos y Análisis de Requerimientos.</li>
+                    <li>Soporte Tecnico Nivel 1 y Gestión de tickets.</li>
+                    <li>Comunicación efectiva y Adaptabilidad.</li>
+                </ul>
+            </section>
+
+            <section id="experiencia" class="section">
+                <h3>Experiencia Profesional</h3>
+                <p><strong>Soporte Tecnico - Emi Falck-Cali (2025-2026):</strong></p>
+                <ul>
+                    <li>Diagnóstico y resolución de incidentes de primer nivel.</li>
+                    <li>Gestión, seguimiento y cierre de tickets y requerimientos.</li>
+                    <li>Manejo básico de Directorio Activo.</li>
+                </ul>
+            </section>
+
+            <section id="educacion" class="section">
+                <h3>Educación</h3>
+                <p><strong>Tecnología en Sistemas de información:</strong> UNIAJC (6° Semestre en curso).</p>
+                <p><strong>Bachillerato:</strong> I.E. Técnica Comercial José Maria Vivas Balcázar.</p>
+            </section>
+
+            <section id="otros" class="section">
+                <h3>Otros Estudios</h3>
+                <ul>
+                    <li>Curso de Java para principiantes - UDEMY (Julio 2024).</li>
+                    <li>Curso Intensivo de Ingles (B1) - Berlitz (Diciembre 2023).</li>
+                </ul>
+            </section>
+
+            <section id="idiomas" class="section">
+                <h3>Idiomas</h3>
+                <p>Español: Nativo.</p>
+                <p>Inglés: Intermedio (B1).</p>
+            </section>
+
+            <section id="proyectos" class="section">
+                <h3>Proyectos Relevantes</h3>
+                <p><strong>Sistema de Gestión de Información:</strong> Desarrollo con PHP, Java, JavaScript, MySQL, HTML y CSS. Incluye análisis de requerimientos y diseño de base de datos.</p>
+            </section>
+        </article>
+    </main>
+    <script src="action.js"></script>
+</body>
+</html>
