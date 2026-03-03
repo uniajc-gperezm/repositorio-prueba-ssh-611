@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cristiano vs Messi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <h1>CR7 vs MESSI</h1>
+    </header>
+
+    <!-- ARTÍCULOS -->
+    <section class="articles">
+
+        <article class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg" alt="Cristiano Ronaldo">
+            <h2>Cristiano Ronaldo</h2>
+            <p>
+                Máximo goleador histórico del fútbol profesional, 5 veces Balón de Oro,
+                campeón de Champions League en 5 ocasiones y campeón de la Eurocopa 2016.
+            </p>
+        </article>
+
+        <article class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lionel_Messi_in_2018.jpg/640px-Lionel_Messi_in_2018.jpg" alt="Lionel Messi">
+            <h2>Lionel Messi</h2>
+            <p>
+                8 veces Balón de Oro, campeón del mundo 2022 con Argentina,
+                máximo goleador histórico del FC Barcelona y campeón de múltiples Champions League.
+            </p>
+        </article>
+
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="form-section">
+        <h2>Formulario de Registro</h2>
+
+        <form id="registroForm">
+            <label>Nombre:</label>
+            <input type="text" required>
+
+            <label>Email:</label>
+            <input type="email" id="email" required>
+
+            <label>Mensaje:</label>
+            <textarea required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- TABLA -->
+    <section class="table-section">
+        <h2>Comparación Estadística</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Jugador</th>
+                    <th>Goles</th>
+                    <th>Asistencias</th>
+                    <th>Premios Totales</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cristiano Ronaldo</td>
+                    <td>870+</td>
+                    <td>250+</td>
+                    <td>35+</td>
+                </tr>
+                <tr>
+                    <td>Lionel Messi</td>
+                    <td>820+</td>
+                    <td>360+</td>
+                    <td>45+</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Proyecto HTML5 - Comparación de Jugadores</p>
+    </footer>
+
+    <script>
+        document.getElementById("registroForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            const email = document.getElementById("email").value;
+            const regex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+
+            if (!regex.test(email)) {
+                alert("Por favor ingrese un email válido");
+                return;
+            }
+
+            alert("Registrado correctamente");
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>
